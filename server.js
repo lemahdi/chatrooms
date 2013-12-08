@@ -52,7 +52,7 @@ var server = http.createServer(function(request, response) {
 	    filePath = 'public' + request.url;
 	}
 	var absPath = './' + filePath;
-	serveStatic(response, absPath);
+	serveStatic(response, cache, absPath);
     });
 
 server.listen(5000, function() {
