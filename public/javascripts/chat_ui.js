@@ -74,6 +74,7 @@ $(document).ready(function() {
 
   $('#send-form').submit(function() {
 	  processUserInput(chatApp, socket);
+	  $('#send-message').focus();
 	  return false;
 	});
 });
